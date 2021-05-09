@@ -1,0 +1,26 @@
+{
+  "name": "purescript-backend",
+  "version": "1.0.0",
+  "description": "Back-End application that uses Express.js web server.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "spago install",
+    "build": "spago -P build",
+    "test": "spago test",
+    "bundle": "spago bundle-app --to dist/index.js",
+    "app": "npm run bundle && node dist"
+  },
+  "keywords": [
+    "purescript",
+    "backend",
+    "express"
+  ],
+  "author": "Yuriy Lazarev",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
